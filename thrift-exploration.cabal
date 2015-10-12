@@ -1,0 +1,47 @@
+name:                thrift-exploration
+version:             0.1.0.0
+synopsis:            Initial project template from stack
+description:         Please see README.md
+homepage:            http://github.com/githubuser/thrift-exploration#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2010 Author Here
+category:            Web
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+executable thrift-exploration-server
+  hs-source-dirs:      app
+  main-is:             GreetingServer.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , thrift-exploration
+                     , thrift
+                     , text
+  default-language:    Haskell2010
+
+executable thrift-exploration-client
+  hs-source-dirs:      app
+  main-is:             GreetingClient.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , thrift-exploration
+                     , thrift
+                     , text
+                     , network
+  default-language:    Haskell2010
+
+library
+  hs-source-dirs:      src-gen-thrift
+  exposed-modules:     Greet_Types
+                     , GreetingService
+                     , GreetingService_Client
+                     , GreetingService_Iface
+  other-modules:       Greet_Consts
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , thrift, network, bytestring, hashable, text, unordered-containers, vector, QuickCheck
+  default-language:    Haskell2010

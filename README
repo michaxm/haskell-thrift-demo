@@ -1,0 +1,16 @@
+Basic thrift demo based on the spec from this outdated blog entry: https://mortenib.wordpress.com/2009/10/29/thrift-and-haskell/
+
+1) setup of the hs-thrift bindings
+
+At the moment, the thrift packages in hackage seems to be broken (at least for me), I solved this by
+downloading thrift, descending into lib/hs directory (let stack work out the dependencies), fixed the build and linked
+that directory ( to "thrift", see stack.yaml).
+
+2) generate hs thrift service
+
+Execute ./generation.bash which expects a thrift compiler "thrift" in path - either use a system package
+("thrift-compiler") or make it yourself with the download in 1)
+
+3) build + test
+
+I suggest using stack.
