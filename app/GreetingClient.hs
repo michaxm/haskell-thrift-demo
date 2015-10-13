@@ -1,5 +1,5 @@
 import qualified Data.Text.Lazy as TL
-import Network
+import Network (PortID(..))
 import Greet_Types
 import GreetingService_Client
 import Thrift.Transport.Handle

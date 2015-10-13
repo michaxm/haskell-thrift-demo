@@ -14,3 +14,8 @@ Execute ./generation.bash which expects a thrift compiler linked to "thrift-comp
 3) build + test
 
 I suggest using stack.
+Start a greeting server and run a client
+
+4) hdfs bindings
+
+Only a client is implemented here - expects a running service under localhost:44444.

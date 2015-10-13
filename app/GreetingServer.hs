@@ -1,6 +1,6 @@
 import qualified Data.Text.Lazy as TL
 import GreetingService_Iface
-import GreetingService
+import GreetingService (process)
 import Greet_Types
 import Thrift.Server (runBasicServer)
 
