@@ -2,3 +2,6 @@
 .stack-work
 src-gen-thrift
 thrift
+thrift-compiler
+.#*
+*/#*#
