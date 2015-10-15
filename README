@@ -8,7 +8,7 @@ that directory ( to "thrift", see stack.yaml).
 
 2) generate hs thrift service
 
-Execute ./generation.bash which expects a thrift compiler linked to "thrift-compiler" - minor versions do matter
+Execute ./generation.bash which expects a thrift compiler ("thrift") linked to "thrift-compiler" - minor versions do matter
 (e.g.: 0.9.3 is not compatible to 0.9.0), probably make it yourself as well, see download in 1).
 
 3) build + test
